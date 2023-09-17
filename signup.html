@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+            background-color: #212121;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        .signup-container {
+            background-color: #8B008B;
+            padding: 20px;
+            border-radius: 10px;
+            width: 400px;
+            margin: 120px auto;
+            height: 350px;
+            text-align: center;
+            color: white;
+        }
+
+        .signup-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .signup-input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #212121;
+            color: white;
+        }
+
+        .signup-button {
+            background-color: #301934;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 14px;
+            cursor: pointer;
+            position: relative;
+
+        }
+
+        .signup-button:hover{
+            transition: all 0.5s ease;
+            box-shadow: 0 0 20px pink;
+        }
+        span{
+            color: #212121;
+        }
+
+      
+    </style>
+</head>
+<body>
+    <div class="signup-container">
+        <h2>Sign <span>Up</span></h2>
+        <form class="signup-form" action="#" method="post">
+            <input class="signup-input" type="text" name="username" placeholder="Username" required>
+            <input class="signup-input" type="email" name="email" placeholder="Email" required>
+            <input class="signup-input" type="password" name="password" placeholder="Password" required>
+            <input class="signup-button" type="submit" value="Sign Up">
+        </form>
+    </div>
+</body>
+</html>

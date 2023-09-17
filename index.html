@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="darkmode">
 
 <head>
   <meta charset="UTF-8">
@@ -36,7 +36,7 @@
   -->
 
   <header class="header" data-header>
-    <div class="container">
+    <div class="container" >
 
       <a href="#" class="logo">
         <ion-icon name="home-outline"></ion-icon> Realestate
@@ -62,11 +62,23 @@
           </li>
 
           <li>
-            <a href="#" class="navbar-link" data-nav-link>About Us</a>
+            <a href="aboutus.html" class="navbar-link" data-nav-link>About Us</a>
           </li>
 
           <li>
             <a href="#" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+           
+          <li>
+            <div class="toggle-btn">
+              <input type="checkbox" id="checkbox">
+              <label for="checkbox" class="toggle-label">
+                <span class="toggle-ball"></span>
+              </label>
+            </div>
+          </li>
+          <li>
+            <a href="signup.html" class="btn1btn-secondary">Signup</a>
           </li>
      
 
@@ -75,8 +87,8 @@
        
         
       </nav>
-      <a href="#" class="btn btn-secondary">Signup</a>
-      <img src="moon.png" id="icon">
+      
+     
 
       
       
@@ -98,18 +110,18 @@
         - #HERO
       -->
 
-      <section class="section hero" aria-label="hero">
+      <section class="section hero" aria-label="hero"  class="dark-mode">
         <div class="container">
 
           <div class="hero-bg">
             <div class="hero-content">
 
               <h1 class="h1 hero-title">
-                We will help you find your <span class="span">Dream</span> home
+                We will help you find your <span class="span3">Dream</span> home
               </h1>
 
               <p class="hero-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, voluptatem!
+                Unlocking Your Real Estate Dreams, One Door at a Time.
               </p>
 
             </div>
@@ -128,7 +140,7 @@
 
               <div class="input-wrapper">
 
-                <label for="search" class="input-label">Search : *</label>
+                <label for="search" class="input-label">Search : </label>
 
                 <input type="search" name="search" id="search" placeholder="Search your home" required
                   class="input-field">
@@ -194,7 +206,7 @@
 
 
       <!-- about section -->
-      <section class="section about" aria-label="about">
+      <section class="section about" aria-label="about" class="dark-mode">
         <div class="container">
 
           <div class="about-banner img-holder">
@@ -202,24 +214,24 @@
               class="img-cover"> -->
             <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
             <lottie-player class="animation-home" src="https://assets5.lottiefiles.com/packages/lf20_vvtkfqbo.json"
-              background="transparent" speed="1" style="width: 400px; height: 400px;" loop autoplay></lottie-player>
+              background="transparent" speed="1" style="width: 400px; height: 400px;" class="dark-mode"></lottie-player>
 
             <!-- <button class="play-btn" aria-label="play video">
               <ion-icon name="play" aria-hidden="true"></ion-icon>
             </button> -->
           </div>
 
-          <div class="about-content">
+          <div class="about-content" >
 
-            <h2 class="h2 section-title">Efficiency. Transparency. Control.</h2>
+            <h2 class="h2 section-title" >Efficiency. Transparency. Control.</h2>
 
-            <p class="section-text">
+            <p class="section-text" >
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum eius officiis aspernatur explicabo neque
               et, quae quasi distinctio magnam corporis veritatis voluptatem repellendus deserunt perferendis eligendi
               repellat unde quibusdam. Dolores.
             </p>
 
-            <a href="#" class="btn btn-primary">Learn More</a>
+            <a href="learnmore.html" class="btn btn-primary">Learn More</a>
 
           </div>
 
@@ -228,10 +240,11 @@
 
 
       <!-- service -->
-
-      <div id="services">
-        <div class="container">
-          <h1 style="color: black; text-align: center;" class="sub-title">Our Services </h1>
+      <section id="services">
+      <div  class="dark-mode">
+        <div class="container" >
+          <h1 class="sub-title">Our </h1>
+          <h1 class="span1">Services</h1>
           <div class="services-list">
             <div>
               <i class="fa-solid fa-code"></i>
@@ -239,7 +252,7 @@
               <br>
               <p>If the distribution of letters and 'words' is random, <br> the reader will not be distracted from
                 making.</p>
-              <a href="#">learn more</a>
+              <a href="evalproperty.html">learn more</a>
             </div>
             <div>
               <i class="fa-solid fa-pen"></i>
@@ -247,7 +260,7 @@
               <br>
               <p> If the distribution of letters and 'words' is random, <br>the reader will not be distracted from
                 making.</p>
-              <a href="#">learn more</a>
+              <a href="meetingagent.html">learn more</a>
             </div>
             <div>
               <i class="fa-solid fa-question"></i>
@@ -255,10 +268,11 @@
               <br>
               <p> If the distribution of letters and 'words' is random, <br> the reader will not be distracted from
                 making.</p>
-              <a href="#">learn more</a>
+              <a href="closethedeal.html">learn more</a>
             </div>
           </div>
         </div>
+      </section>
 
 
 
@@ -267,7 +281,7 @@
 
 
 
-        <section class="section property" aria-label="property">
+        <section class="section property" aria-label="property" id="pricings">
           <div class="container">
 
             <h2 class="h2 section-title">Featured Properties</h2>
@@ -344,7 +358,7 @@
                     <ion-icon name="heart" aria-hidden="true"></ion-icon>
                   </button>
 
-                  <div class="card-content">
+                  <div class="card-content" >
 
                     <h3 class="h3">
                       <a href="#" class="card-title">F-309 Delta-1 Greater Noida, 201310</a>
@@ -631,7 +645,7 @@
         - #CONTACT
       -->
 
-        <section class="section contact" aria-label="contact">
+        <section class="section contact" aria-label="contact" >
           <div class="container">
 
             <h2 class="h2 section-title">Have Question ? Get in touch!</h2>
@@ -657,11 +671,11 @@
         - #NEWSLETTER
       -->
 
-        <section class="newsletter" aria-label="newsletter">
+        <section class="newsletter" aria-label="newsletter" class="dark-mode">
           <div class="container">
 
             <div class="wrapper">
-              <h2 class="h2 section-title">Subscribe to Newsletter!</h2>
+              <h2 class="text1">Subscribe to Newsletter!</h2>
 
               <p class="section-text">Subscribe to get latest updates and information.</p>
             </div>
@@ -680,12 +694,12 @@
     - #FOOTER
   -->
 
-        <footer class="footer">
+        <footer class="footer" >
 
-          <div class="footer-top">
+          <div class="footer-top" >
             <div class="container">
 
-              <div class="footer-brand">
+              <div class="footer-brand" >
 
                 <a href="#" class="logo">
                   <ion-icon name="business-outline"></ion-icon> Realestate
@@ -704,15 +718,15 @@
                 </li>
 
                 <li>
-                  <a href="#" class="footer-link">
+                  <a href="aboutus.html" class="footer-link">
                     <ion-icon name="chevron-forward"></ion-icon>
 
-                    <span class="span">About us</span>
+                   <span class="span" >About us</span>
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" class="footer-link">
+                  <a href="#services" class="footer-link">
                     <ion-icon name="chevron-forward"></ion-icon>
 
                     <span class="span">Services</span>
@@ -720,7 +734,7 @@
                 </li>
 
                 <li>
-                  <a href="#" class="footer-link">
+                  <a href="#pricings" class="footer-link">
                     <ion-icon name="chevron-forward"></ion-icon>
 
                     <span class="span">Pricing</span>
@@ -736,7 +750,7 @@
                 </li>
 
                 <li>
-                  <a href="#" class="footer-link">
+                  <a href="signup.html" class="footer-link">
                     <ion-icon name="chevron-forward"></ion-icon>
 
                     <span class="span">Login</span>
@@ -752,7 +766,7 @@
                 </li>
 
                 <li>
-                  <a href="#" class="footer-link">
+                  <a href="termofservice.html" class="footer-link">
                     <ion-icon name="chevron-forward"></ion-icon>
 
                     <span class="span">Terms of Services</span>
@@ -760,7 +774,7 @@
                 </li>
 
                 <li>
-                  <a href="#" class="footer-link">
+                  <a href="privacypolicy.html" class="footer-link">
                     <ion-icon name="chevron-forward"></ion-icon>
 
                     <span class="span">Privacy Policy</span>
@@ -795,7 +809,7 @@
                   <ion-icon name="location-outline"></ion-icon>
 
                   <address class="address">
-                    xyxyxyxyx<br>
+                   xyxyxyxyx<br>
                     558,<br>
                     485
                     <a href="#" class="address-link">View on Google map</a>
@@ -819,35 +833,35 @@
             </div>
           </div>
 
-          <div class="footer-bottom">
+          <div class="footer-bottom" class="dark-mode">
             <div class="container">
 
               <p class="copyright">
-                &copy; 2022 Realestate. All Right Reserved by Realestate<a href="#" class="copyright-link"></a>
+                &copy; 2023 Realestate. All Right Reserved by Realestate<a href="#" class="copyright-link"></a>
               </p>
 
               <ul class="social-list">
 
                 <li>
-                  <a href="#" class="social-link">
+                  <a href="https://www.facebook.com/profile.php?id=100064157404208" class="social-link" target="_blank">
                     <ion-icon name="logo-facebook"></ion-icon>
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" class="social-link">
+                  <a href="https://www.instagram.com/abesec.codechef/" class="social-link" target="blank">
                     <ion-icon name="logo-instagram"></ion-icon>
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" class="social-link">
+                  <a href="https://twitter.com/abesec_codechef" class="social-link" target="blank">
                     <ion-icon name="logo-twitter"></ion-icon>
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" class="social-link">
+                  <a href="https://www.linkedin.com/company/abesec-codechef/" class="social-link" target="_blank">
                     <ion-icon name="logo-linkedin"></ion-icon>
                   </a>
                 </li>
@@ -879,7 +893,7 @@
         <!-- 
     - custom js link
   -->
-        <script src="./assets/js/script.js"></script>
+        <script src="script.js"></script>
 
         <!-- 
     - ionicon link

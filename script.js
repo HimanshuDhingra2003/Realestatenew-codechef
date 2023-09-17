@@ -1,15 +1,4 @@
 
-var icon = document.getElementById("icon");
-
- icon.onclick = function(){
-  document.body.classList.toggle("dark-theme");
-  if(document.body.classList.contains("dark-theme")){
-    icon.src="sun.png";}
-  else{
-    icon.src="moon.png";
-  }
-}
-
 
 
 /*
@@ -89,3 +78,14 @@ addEventOnElement(tabBtns, "click", changeTab);
 
 
  
+const toggle_btn = document.querySelector('#checkbox');
+
+
+toggle_btn.addEventListener('change', () => {
+if(toggle_btn.checked){
+  document.body.classList.add('dark-mode');
+}
+else{
+  document.body.classList.remove('dark-mode');
+}
+});
