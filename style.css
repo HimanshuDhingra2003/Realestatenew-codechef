@@ -334,13 +334,19 @@
   }
 
   .hero-content {
-    background-color: hsl(224, 34%, 13%);
-    padding-block: 180px;
-    padding-inline: 40px;
-    display: grid;
-    grid-template-columns: 1fr;
-    place-content: center;
-    text-align: center;
+    background-image: url("../images/gary-lopater-PBHwSmhyt9w-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: hsl(224, 34%, 13%);
+  padding-block: 180px;
+  padding-inline: 40px;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-content: center;
+  text-align: center;
   }
 
   .hero-title {
